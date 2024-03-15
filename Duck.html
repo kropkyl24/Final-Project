@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music and Animation Page</title>
+  <style>
+    /* Center the content vertically and horizontally */
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0; /* Background color */
+            background-image: url("https://wallpapers.com/images/hd/seattle-hd-cjgta92xmmam0h56.jpg");
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+    }
+
+    /* Define CSS animation */
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Apply animation to the image */
+    .animated {
+      animation: rotate 2s linear infinite;
+    }
+  </style>
+</head>
+<body>
+  <!-- Embed audio with controls -->
+  <audio controls autoplay>
+    <source src="Dance.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Display the animated GIF -->
+  <img src="https://i.gifer.com/origin/f5/f5baef4b6b6677020ab8d091ef78a3bc_w200.webp" alt="Animated GIF" class="animated">
+
+  <!-- You can add additional content or styling as needed -->
+</body>
+    <p><a href="index.html">Back to Home Page</a></p>
+</html>
